@@ -8,22 +8,22 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>利用hexo创建博客并部署到GitHub上 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="视频中使用到的网址： Hexo yilia 主题一揽子使用方案https:&#x2F;&#x2F;cloudy-liu.github.io&#x2F;2018&#x2F;04&#x2F;07&#x2F;Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88&#x2F;#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%8">
+  <meta name="description" content="使用hexo框架搭建blog软件准备（1）Githttps:&#x2F;&#x2F;git-scm.com&#x2F; 参考网址：git安装 https:&#x2F;&#x2F;www.cnblogs.com&#x2F;ximiaomiao&#x2F;p&#x2F;7140456.htmlGit配置http:&#x2F;&#x2F;www.xuanfengge.com&#x2F;using-ssh-key-link-github-photo-tour.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用hexo创建博客并部署到GitHub上">
 <meta property="og:url" content="http://yoursite.com/2020/07/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="视频中使用到的网址： Hexo yilia 主题一揽子使用方案https:&#x2F;&#x2F;cloudy-liu.github.io&#x2F;2018&#x2F;04&#x2F;07&#x2F;Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88&#x2F;#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%8">
+<meta property="og:description" content="使用hexo框架搭建blog软件准备（1）Githttps:&#x2F;&#x2F;git-scm.com&#x2F; 参考网址：git安装 https:&#x2F;&#x2F;www.cnblogs.com&#x2F;ximiaomiao&#x2F;p&#x2F;7140456.htmlGit配置http:&#x2F;&#x2F;www.xuanfengge.com&#x2F;using-ssh-key-link-github-photo-tour.html">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-04T03:48:01.000Z">
-<meta property="article:modified_time" content="2020-07-04T07:35:46.738Z">
+<meta property="article:modified_time" content="2020-07-04T08:24:15.367Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/themes/yilia/source/">
+    <link rel="icon" href="/assets/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -85,7 +85,13 @@
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/cai-da-shuai-ge-77" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
+					<a class="qq" target="_blank" href="/assets/qq.png" title="qq"><i class="icon-qq"></i></a>
+		        
+					<a class="weixin" target="_blank" href="/assets/wei.jpg" title="weixin"><i class="icon-weixin"></i></a>
+		        
 					<a class="douban" target="_blank" href="https://www.douban.com/people/184602748/" title="douban"><i class="icon-douban"></i></a>
+		        
+					<a class="mail" target="_blank" href="mailto:361870109@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -124,7 +130,13 @@
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/cai-da-shuai-ge-77" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
+						<a class="qq" target="_blank" href="/assets/qq.png" title="qq"><i class="icon-qq"></i></a>
+			        
+						<a class="weixin" target="_blank" href="/assets/wei.jpg" title="weixin"><i class="icon-weixin"></i></a>
+			        
 						<a class="douban" target="_blank" href="https://www.douban.com/people/184602748/" title="douban"><i class="icon-douban"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:361870109@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -170,59 +182,50 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>视频中使用到的网址：</p>
-<p>Hexo yilia 主题一揽子使用方案<br><a href="https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8F%90%E7%A4%BA%E7%BC%BA%E5%A4%B1%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8F%90%E7%A4%BA%E7%BC%BA%E5%A4%B1%E6%A8%A1%E5%9D%97</a></p>
-<p>Hexo博客yilia主题添加背景音乐 （网易云音乐）<br><a href="https://joeybling.github.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/" target="_blank" rel="noopener">https://joeybling.github.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/</a></p>
+        <h1 id="使用hexo框架搭建blog"><a href="#使用hexo框架搭建blog" class="headerlink" title="使用hexo框架搭建blog"></a>使用hexo框架搭建blog</h1><h2 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h2><p>（1）Git<br><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<h2 id="参考网址："><a href="#参考网址：" class="headerlink" title="参考网址："></a>参考网址：</h2><p>git安装 <a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>Git配置<a href="http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html" target="_blank" rel="noopener">http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html</a></p>
 <a id="more"></a>
-<p>Hexo Yilia 高级配置<br><a href="http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8" target="_blank" rel="noopener">http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8</a></p>
-<p>Hexo博客添加helper-live2d动态模型插件<br><a href="https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</a></p>
-<p>Hexo添加Live2D看板娘+模型预览<br><a href="http://element-ui.cn/news_show_22203.shtml" target="_blank" rel="noopener">http://element-ui.cn/news_show_22203.shtml</a></p>
-<p>使用hexo框架搭建blog<br>软件准备<br>（1）Git<br><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
-<p>参考网址：<br>git安装 <a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>Git配置<a href="http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html" target="_blank" rel="noopener">http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html</a></p>
 <p>（2）Node.js<br><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
-<p>安装过程：<br>（1）Node安装<br>按照安装过程依次点击即可，安装过程很简单。<br>（2）安装Git<br>按照网上的安装方式进行安装就可以了<br><a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>（3）安装Hexo   （下面出现的检测全部是在git中进行的）<br>———————————————————————————————————————<br>检测node安装是否成功：<br>node -v<br>（返回版本号）<br>npm -v<br>（返回版本号）</p>
-<p>———————————————————————————————————————<br>安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>检测<br>cnpm<br>（返回cnpm的信息）<br>cnpm -v<br>（返回cnpm的版本信息）<br>安装hexo（如果失败重新来过就可以了）<br>cnpm install -g hexo-cli<br>检测<br>hexo -v<br>（返回hexo的版本信息）</p>
+<h2 id="安装过程："><a href="#安装过程：" class="headerlink" title="安装过程："></a>安装过程：</h2><p>（1）Node安装<br>按照安装过程依次点击即可，安装过程很简单。<br>（2）安装Git<br>按照网上的安装方式进行安装就可以了<br><a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>（3）安装Hexo   （下面出现的检测全部是在git中进行的）<br>———————————————————————————————————————</p>
+<h2 id="检测node安装是否成功："><a href="#检测node安装是否成功：" class="headerlink" title="检测node安装是否成功："></a>检测node安装是否成功：</h2><p>node -v<br>（返回版本号）<br>npm -v<br>（返回版本号）</p>
+<p>———————————————————————————————————————</p>
+<h2 id="安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）"><a href="#安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）" class="headerlink" title="安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）"></a>安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）</h2><p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>检测<br>cnpm<br>（返回cnpm的信息）<br>cnpm -v<br>（返回cnpm的版本信息）</p>
+<h2 id="安装hexo（如果失败重新来过就可以了）"><a href="#安装hexo（如果失败重新来过就可以了）" class="headerlink" title="安装hexo（如果失败重新来过就可以了）"></a>安装hexo（如果失败重新来过就可以了）</h2><p>cnpm install -g hexo-cli<br>检测<br>hexo -v<br>（返回hexo的版本信息）</p>
 <p>初始化操作过程：<br>在本地建立blog文件夹<br>进入Git页面<br>pwd   （查询目录所在位置）<br>mkdir Blog   （在目录下建立文件夹Blog）（如果在以后的操作过程中出现问题无法解决就把这个文件夹删掉直接重新来过就可以了）<br>———————————————————————————————————————</p>
 <p>cd Blog/   （进入Blog文件夹）<br>pwd    （检测是否进入Blog文件夹）<br>———————————————————————————————————————</p>
 <p>hexo init  （即：初始化hexo）</p>
 <p>ls -l   （查看初始化获得的文件）</p>
 <p>hexo s   （启动hexo）</p>
 <p><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>这样就可以在本地4000端口查看自己的网站了</p>
-<p>创建博客文章 hexo new ‘文章题目’</p>
-<p>进一步深化操作过程1（将网站部署到Github上）<br>首先申请一个github账号，然后再github中按照   自己的昵称+.github.io 建立一个仓库（repository）（例：hansonpang99.github.io）</p>
+<h1 id="创建博客文章"><a href="#创建博客文章" class="headerlink" title="创建博客文章"></a>创建博客文章</h1><p>hexo new ‘文章题目’</p>
+<h1 id="进一步深化操作过程1（将网站部署到Github上）"><a href="#进一步深化操作过程1（将网站部署到Github上）" class="headerlink" title="进一步深化操作过程1（将网站部署到Github上）"></a>进一步深化操作过程1（将网站部署到Github上）</h1><p>首先申请一个github账号，然后再github中按照   自己的昵称+.github.io 建立一个仓库（repository）（例：hansonpang99.github.io）</p>
 <p>在Blog目录下安装一个hexo部署插件<br>cnpm install –save hexo-deployer-git</p>
 <p>找到Blog文件中的   _config.yml  文件，使用编译器打开，建议使用   Visual Studio Code打开<br>注：Visual Studio Code的好处：1.支持的语言种类多，<br>                             2.视图简洁<br>                             3.拥有插件种类多</p>
 <p>找到这部分代码，（原始的是没有repo，和branch的，而且type后面也没有东西）<br>对这段代码进行更改<br>type    一个名字，建议写成git方便识别<br>repo    repository仓库地址   将刚刚新建的github仓库地址复制到这里就可以了<br>branch  分支这里设置管理员  master</p>
 <p>更改以后进行保存<br>然后再Git里面输入 hexo d     将本地文件部署到github新建的仓库中<br>———————————————————————————————————————</p>
 <p>然后通过访问     https://+自己的仓库名   就可以访问部署到github上的blog了<br>（例：<a href="https://hansonpang99.github.io）" target="_blank" rel="noopener">https://hansonpang99.github.io）</a></p>
-<p>进一步深化操作过程2（更换Blog的主题）<br>这里以  yilia  主题为例进行更换<br>———————————————————————————————————————</p>
-<p>首先下载  yilia  主题<br>在Git中输入  git clone <a href="http://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">http://github.com/litten/hexo-theme-yilia.git</a>  themes/yilia<br>                                 （克隆地址）               （克隆之后的本地位置）</p>
+<h1 id="进一步深化操作过程2（更换Blog的主题）"><a href="#进一步深化操作过程2（更换Blog的主题）" class="headerlink" title="进一步深化操作过程2（更换Blog的主题）"></a>进一步深化操作过程2（更换Blog的主题）</h1><p>这里以  yilia  主题为例进行更换<br>———————————————————————————————————————</p>
+<h2 id="首先下载-yilia-主题"><a href="#首先下载-yilia-主题" class="headerlink" title="首先下载  yilia  主题"></a>首先下载  yilia  主题</h2><p>在Git中输入  git clone <a href="http://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">http://github.com/litten/hexo-theme-yilia.git</a>  themes/yilia<br>                                 （克隆地址）               （克隆之后的本地位置）</p>
 <p>找到Blog文件中的   _config.yml  文件，使用编译器打开，建议使用   Visual Studio Code打开</p>
 <p>找到这部分代码（即theme）<br>将冒号后面的内容改为刚刚新建的yilia<br>———————————————————————————————————————<br>hexo clean            清除数据库之类<br>hexo g               生成静态网站<br>hexo d               将现在的文件部署到github中</p>
 <p>这样就实现了主题的更改</p>
-<p>进一步深化操作过程3（在建好的博客中添加相册功能）<br>准备工作：<br>安装python<br>下载地址：<a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a></p>
+<h1 id="进一步深化操作过程3（在建好的博客中添加相册功能）"><a href="#进一步深化操作过程3（在建好的博客中添加相册功能）" class="headerlink" title="进一步深化操作过程3（在建好的博客中添加相册功能）"></a>进一步深化操作过程3（在建好的博客中添加相册功能）</h1><h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><p>安装python<br>下载地址：<a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a></p>
 <p>下载完成后点击安装，安装教程：<br><a href="https://blog.csdn.net/qq_25814003/article/details/80609729" target="_blank" rel="noopener">https://blog.csdn.net/qq_25814003/article/details/80609729</a><br>在安装时选择自定义安装，其他注意事项如图所示</p>
 <p>安装成功后，进行检测，进入cmd中输入  python<br>出现下图所示界面，则证明安装成功。</p>
-<p>正式操作：<br>1.在github中创建一个新的仓库，命名为BlogBackup。<br>2. 将下面的github仓库中的文件以zip格式下载到本地<br>仓库地址：<a href="https://github.com/lawlite19/Blog-Back-Up" target="_blank" rel="noopener">https://github.com/lawlite19/Blog-Back-Up</a><br>具体操作：</p>
+<h2 id="正式操作："><a href="#正式操作：" class="headerlink" title="正式操作："></a>正式操作：</h2><p>1.在github中创建一个新的仓库，命名为BlogBackup。</p>
+<p>2.将下面的github仓库中的文件以zip格式下载到本地<br>仓库地址：<a href="https://github.com/lawlite19/Blog-Back-Up" target="_blank" rel="noopener">https://github.com/lawlite19/Blog-Back-Up</a><br>具体操作：</p>
 <p>3.下载到本地后，在本地找一个合适的位置进行解压。<br>解压结果</p>
 <p>4.进入解压后的文件中，将min_photos和photos两个文件夹中的照片全部删除，并将自己要上传的照片放到photos文件夹中，照片的命名规则为：2015-05-01_XXX.jpg   （jpg可更改为其他图片格式）</p>
-<ol start="5">
-<li>在解压后的文件中，使用Visaul Studio Code打开tool.py文件，并将文件中的地址改成自己的博客文件夹中的data.json地址。</li>
-</ol>
-<ol start="6">
-<li>在解压后的文件中，右击鼠标，点击git bash here（出现该操作的前提是已安装git）</li>
-</ol>
-<p>7.将该文件提交到自己刚刚新建的github库（BlogBackup）中<br>具体操作：<br>在打开的Git页面中，<br>（1）输入 git init   （把public文件夹转成一个git仓库）<br>git add . （git add -A） （把该文件夹中所有的东西加载到本地仓库里）<br>git commit -m “test”    （提交信息）<br>git  remote add photo <a href="mailto:git@github.com">git@github.com</a>:hansonpang99/BlogBackup.git<br>（加粗部分对应你的仓库地址，如图所示）</p>
-<p>git push photo master  （将文件提交到github仓库）</p>
-<p>8.进入到你的博客目录下使用Git执行 hexo new page “photos”,就会出现一个这样的新目录</p>
+<p>5.在解压后的文件中，使用Visaul Studio Code打开tool.py文件，并将文件中的地址改成自己的博客文件夹中的data.json地址。</p>
+<p>6.在解压后的文件中，右击鼠标，点击git bash here（出现该操作的前提是已安装git）</p>
+<p>7.将该文件提交到自己刚刚新建的github库（BlogBackup）中<br>具体操作：<br>在打开的Git页面中，<br>（1）输入 git init   （把public文件夹转成一个git仓库）<br>git add . （git add -A） （把该文件夹中所有的东西加载到本地仓库里）<br>git commit -m “test”    （提交信息）<br>git  remote add photo <a href="mailto:git@github.com">git@github.com</a>:hansonpang99/BlogBackup.git<br>（加粗部分对应你的仓库地址，如图所示）<br>git push photo master  （将文件提交到github仓库）<br>8.进入到你的博客目录下使用Git执行 hexo new page “photos”,就会出现一个这样的新目录</p>
 <p>9.配置 Yilia 主题让其显示出来.在Blog/themes/yilia/_config.yml文件中这样设置</p>
 <p>10.将样式文件放到photos文件夹下<br>样式文件地址：<br><a href="https://github.com/lawlite19/Blog-Back-Up/tree/master/blog_photos_copy" target="_blank" rel="noopener">https://github.com/lawlite19/Blog-Back-Up/tree/master/blog_photos_copy</a>  </p>
 <p>修改样式文件中的ins.js文件，主要是里面的render函数<br>其中的url对应到你的github放图片的地址（即第1步创建的仓库地址）</p>
 <p>11.进入图片文件夹中（即下载的Blog-Back-Up-master文件夹中）使用tool.py脚本处理图片<br>在Blog-Back-Up-master文件夹中打开Git页面中，输入  python tool.py  处理图片</p>
 <p>12.在本地的博客目录下，打开git<br>输入 hexo clean<br>     hexo g<br>     hexo s   （在本地检测是否成功，成功后执行下一步，否则解决问题）<br>     hexo d    （将文件部署到github）</p>
 <p>13．以后每次在photos中添加图片后，重复11,12步就可以完成部署到github了。</p>
-<p>参考网址</p>
-<p>进一步深化操作过程4（添加背景音乐 （网易云音乐））<br>1.打开网易云音乐首页，复制选择的背景音乐分享外链<br><a href="https://music.163.com/" target="_blank" rel="noopener">https://music.163.com/</a>    在网易云网页中选中想要使用的音乐，进入播放界面，<br>点击   “生成外链播放器”</p>
+<h1 id="参考网址"><a href="#参考网址" class="headerlink" title="参考网址"></a>参考网址</h1><p>进一步深化操作过程4（添加背景音乐 （网易云音乐））<br>1.打开网易云音乐首页，复制选择的背景音乐分享外链<br><a href="https://music.163.com/" target="_blank" rel="noopener">https://music.163.com/</a>    在网易云网页中选中想要使用的音乐，进入播放界面，<br>点击   “生成外链播放器”</p>
 <p>（注：有版权的歌曲不能生成外链）<br>复制生成的代码</p>
 <p>2、引入播放器代码<br>在themes/yilia/layout/_partial/left-col.ejs文件nav标签中添加如下代码<br>将代码中的红色部分和刚刚复制的网易云外链代码进行对照，将对应部分进行替换（不替换的话使用的是 纸短情长 歌曲）</p>
 <!-- 网易云音乐插件 -->
@@ -233,6 +236,13 @@
 <p>这里是默认的设置，如果想要安装自己喜欢的就继续网站教程<br>其他板娘模板介绍：<br><a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">https://huaji8.top/post/live2d-plugin-2.0/</a><br>挑选一个喜欢的板娘然后按照教程进行安装。</p>
 <p>注：下面这个主题需要是Darwin系统</p>
 <p>只执行参考网址的第一步也可以实现，保持默认就可以了，我就是这样。</p>
+<p>视频中使用到的网址：</p>
+<p>Hexo yilia 主题一揽子使用方案<br><a href="https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8F%90%E7%A4%BA%E7%BC%BA%E5%A4%B1%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8F%90%E7%A4%BA%E7%BC%BA%E5%A4%B1%E6%A8%A1%E5%9D%97</a></p>
+<p>Hexo博客yilia主题添加背景音乐 （网易云音乐）<br><a href="https://joeybling.github.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/" target="_blank" rel="noopener">https://joeybling.github.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/</a></p>
+<!-- more -->
+<p>Hexo Yilia 高级配置<br><a href="http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8" target="_blank" rel="noopener">http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8</a></p>
+<p>Hexo博客添加helper-live2d动态模型插件<br><a href="https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</a></p>
+<p>Hexo添加Live2D看板娘+模型预览<br><a href="http://element-ui.cn/news_show_22203.shtml" target="_blank" rel="noopener">http://element-ui.cn/news_show_22203.shtml</a></p>
 
       
 
