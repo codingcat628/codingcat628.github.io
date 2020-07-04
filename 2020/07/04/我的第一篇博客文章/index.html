@@ -16,7 +16,7 @@
 <meta property="og:description" content="使用hexo框架搭建blog软件准备（1）Githttps:&#x2F;&#x2F;git-scm.com&#x2F; 参考网址：git安装 https:&#x2F;&#x2F;www.cnblogs.com&#x2F;ximiaomiao&#x2F;p&#x2F;7140456.htmlGit配置http:&#x2F;&#x2F;www.xuanfengge.com&#x2F;using-ssh-key-link-github-photo-tour.html">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-04T03:48:01.000Z">
-<meta property="article:modified_time" content="2020-07-04T08:24:15.367Z">
+<meta property="article:modified_time" content="2020-07-04T08:37:47.694Z">
 <meta property="article:author" content="番茄加鸡蛋~">
 <meta name="twitter:card" content="summary">
   
@@ -168,7 +168,8 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            
+<article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -191,6 +192,7 @@
         <h1 id="使用hexo框架搭建blog"><a href="#使用hexo框架搭建blog" class="headerlink" title="使用hexo框架搭建blog"></a>使用hexo框架搭建blog</h1><h2 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h2><p>（1）Git<br><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
 <h2 id="参考网址："><a href="#参考网址：" class="headerlink" title="参考网址："></a>参考网址：</h2><p>git安装 <a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>Git配置<a href="http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html" target="_blank" rel="noopener">http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html</a></p>
 <a id="more"></a>
+
 <p>（2）Node.js<br><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
 <h2 id="安装过程："><a href="#安装过程：" class="headerlink" title="安装过程："></a>安装过程：</h2><p>（1）Node安装<br>按照安装过程依次点击即可，安装过程很简单。<br>（2）安装Git<br>按照网上的安装方式进行安装就可以了<br><a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>（3）安装Hexo   （下面出现的检测全部是在git中进行的）<br>———————————————————————————————————————</p>
 <h2 id="检测node安装是否成功："><a href="#检测node安装是否成功：" class="headerlink" title="检测node安装是否成功："></a>检测node安装是否成功：</h2><p>node -v<br>（返回版本号）<br>npm -v<br>（返回版本号）</p>
@@ -335,11 +337,11 @@
 </div>
 
 <div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
-    </div>
+  <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+  <p>扫一扫，分享到微信</p>
+  <div class="wx-qrcode">
+    <img src="api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://codingcat628.github.io/2020/07/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+  </div>
 </div>
 
 <div class="mask js-mask"></div>
@@ -417,10 +419,11 @@
       	</div>
     </div>
   </div>
-<span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-
-<span id="busuanzi_container_site_uv">  本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
 </footer>
+
+<!--页面点击小红心-->
+<script type="text/javascript" src="/love.js"></script>
+
 
 
     </div>
@@ -498,6 +501,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
