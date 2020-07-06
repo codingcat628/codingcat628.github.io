@@ -88,28 +88,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Java学习路线总结</title>
-    <url>/2020/07/04/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="总结一下我认为学习Java的路线："><a href="#总结一下我认为学习Java的路线：" class="headerlink" title="总结一下我认为学习Java的路线："></a>总结一下我认为学习Java的路线：</h2><a id="more"></a>
-<ul>
-<li>Java基础–&gt;流程控制–&gt;面向对象(包括Java语法)–&gt;Java集合–&gt;Java IO流–&gt;异常–&gt;多线程–&gt;网络编程–&gt;反射</li>
-<li>avaWeb基础–&gt;HTML/CSS/JavaScript/jQuery–&gt;Tomcat–&gt;XML/注解-&gt;Servlet–&gt;HTTP–&gt;Filter过滤器和监听器–&gt;JSP–&gt;AJAX/JSON–&gt;数据库(MySQL)–&gt;JDBC和DbUtils</li>
-<li>项目管理和框架–&gt;Maven–&gt;SpringBoot</li>
-<li>Linux基本命令</li>
-</ul>
-<hr>
-<h2 id="我们的项目是这样的："><a href="#我们的项目是这样的：" class="headerlink" title="我们的项目是这样的："></a>我们的项目是这样的：</h2><ul>
-<li>以Maven来管理我们的项目</li>
-<li>前端通过BootStrap来搭建页面框架</li>
-<li>SpringBoot来搭建Java后端环境，SpringMVC处理前端请求(SpringBoot整合了)</li>
-<li>DAO层使用DbUtils组件来完成，MySQL作为数据库</li>
-</ul>
-<hr>
-<p>当然了，我的Java路线不一定就是对的，我这里只是给出一种路线。<br>再次说明：这套路线是以“快速”学习Java的，如果你想要找到一份好工作，上面的知识点是不够的！</p>
-<hr>
-]]></content>
-  </entry>
-  <entry>
     <title>利用hexo创建博客并部署到GitHub上</title>
     <url>/2020/07/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h1 id="使用hexo框架搭建blog"><a href="#使用hexo框架搭建blog" class="headerlink" title="使用hexo框架搭建blog"></a>使用hexo框架搭建blog</h1><a id="more"></a>
@@ -176,5 +154,30 @@
 <p>Hexo博客添加helper-live2d动态模型插件<br><a href="https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</a></p>
 <p>Hexo添加Live2D看板娘+模型预览<br><a href="http://element-ui.cn/news_show_22203.shtml" target="_blank" rel="noopener">http://element-ui.cn/news_show_22203.shtml</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Java学习路线总结</title>
+    <url>/2020/07/04/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="总结一下我认为学习Java的路线："><a href="#总结一下我认为学习Java的路线：" class="headerlink" title="总结一下我认为学习Java的路线："></a>总结一下我认为学习Java的路线：</h2><a id="more"></a>
+<ul>
+<li>Java基础–&gt;流程控制–&gt;面向对象(包括Java语法)–&gt;Java集合–&gt;Java IO流–&gt;异常–&gt;多线程–&gt;网络编程–&gt;反射</li>
+<li>avaWeb基础–&gt;HTML/CSS/JavaScript/jQuery–&gt;Tomcat–&gt;XML/注解-&gt;Servlet–&gt;HTTP–&gt;Filter过滤器和监听器–&gt;JSP–&gt;AJAX/JSON–&gt;数据库(MySQL)–&gt;JDBC和DbUtils</li>
+<li>项目管理和框架–&gt;Maven–&gt;SpringBoot</li>
+<li>Linux基本命令</li>
+</ul>
+<hr>
+<h2 id="我们的项目是这样的："><a href="#我们的项目是这样的：" class="headerlink" title="我们的项目是这样的："></a>我们的项目是这样的：</h2><ul>
+<li>以Maven来管理我们的项目</li>
+<li>前端通过BootStrap来搭建页面框架</li>
+<li>SpringBoot来搭建Java后端环境，SpringMVC处理前端请求(SpringBoot整合了)</li>
+<li>DAO层使用DbUtils组件来完成，MySQL作为数据库</li>
+</ul>
+<hr>
+<p>当然了，我的Java路线不一定就是对的，我这里只是给出一种路线。<br>再次说明：这套路线是以“快速”学习Java的，如果你想要找到一份好工作，上面的知识点是不够的！</p>
+<hr>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
 </search>
