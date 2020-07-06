@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Java学习路线总结</title>
+    <url>/2020/07/04/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="总结一下我认为学习Java的路线："><a href="#总结一下我认为学习Java的路线：" class="headerlink" title="总结一下我认为学习Java的路线："></a>总结一下我认为学习Java的路线：</h2><a id="more"></a>
+<ul>
+<li>Java基础–&gt;流程控制–&gt;面向对象(包括Java语法)–&gt;Java集合–&gt;Java IO流–&gt;异常–&gt;多线程–&gt;网络编程–&gt;反射</li>
+<li>avaWeb基础–&gt;HTML/CSS/JavaScript/jQuery–&gt;Tomcat–&gt;XML/注解-&gt;Servlet–&gt;HTTP–&gt;Filter过滤器和监听器–&gt;JSP–&gt;AJAX/JSON–&gt;数据库(MySQL)–&gt;JDBC和DbUtils</li>
+<li>项目管理和框架–&gt;Maven–&gt;SpringBoot</li>
+<li>Linux基本命令</li>
+</ul>
+<hr>
+<h2 id="我们的项目是这样的："><a href="#我们的项目是这样的：" class="headerlink" title="我们的项目是这样的："></a>我们的项目是这样的：</h2><ul>
+<li>以Maven来管理我们的项目</li>
+<li>前端通过BootStrap来搭建页面框架</li>
+<li>SpringBoot来搭建Java后端环境，SpringMVC处理前端请求(SpringBoot整合了)</li>
+<li>DAO层使用DbUtils组件来完成，MySQL作为数据库</li>
+</ul>
+<hr>
+<p>当然了，我的Java路线不一定就是对的，我这里只是给出一种路线。<br>再次说明：这套路线是以“快速”学习Java的，如果你想要找到一份好工作，上面的知识点是不够的！</p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/07/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>WEB前端工程师常去的15个技术网站</title>
+    <url>/2020/07/06/WEB%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E5%8E%BB%E7%9A%8415%E4%B8%AA%E6%8A%80%E6%9C%AF%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="1、CSDN"><a href="#1、CSDN" class="headerlink" title="1、CSDN"></a>1、CSDN</h1><p>网址：<a href="https://www.csdn.net/" target="_blank" rel="noopener">https://www.csdn.net/</a></p>
+<a id="more"></a>
+
+<p>简介：</p>
+<p>CSDN (Chinese Software Developer Network) 创立于1999年，是中国最大的IT社区和服务平台，为中国的软件开发者和IT从业者提供知识传播、职业发展、软件开发等全生命周期服务，满足他们在职业发展中学习及共享知识和信息、建立职业发展社交圈、通过软件开发实现技术商业化等刚性需求。</p>
+<h1 id="2、GitHub"><a href="#2、GitHub" class="headerlink" title="2、GitHub"></a>2、GitHub</h1><p>网址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>简介：</p>
+<p>gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。</p>
+<p>gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。</p>
+<p>目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</p>
+<h1 id="3、知乎"><a href="#3、知乎" class="headerlink" title="3、知乎"></a>3、知乎</h1><p>网址：<a href="https://www.zhihu.com/" target="_blank" rel="noopener">https://www.zhihu.com/</a></p>
+<p>简介：</p>
+<p>知乎是网络问答社区，连接各行各业的用户。用户分享着彼此的知识、经验和见解，为中文互联网源源不断地提供多种多样的信息。</p>
+<p>准确地讲，知乎更像一个论坛：用户围绕着某一感兴趣的话题进行相关的讨论，同时可以关注兴趣一致的人。</p>
+<p>对于概念性的解释，网络百科几乎涵盖了你所有的疑问；但是对于发散思维的整合，却是知乎的一大特色。</p>
+<h1 id="4、jQuery"><a href="#4、jQuery" class="headerlink" title="4、jQuery"></a>4、jQuery</h1><p>网址：<a href="http://jquery.com/" target="_blank" rel="noopener">http://jquery.com/</a></p>
+<p>简介：</p>
+<p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。</p>
+<p>jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+<h1 id="5、w3cschool"><a href="#5、w3cschool" class="headerlink" title="5、w3cschool"></a>5、w3cschool</h1><p>网址：<a href="http://www.w3school.com.cn/" target="_blank" rel="noopener">http://www.w3school.com.cn/</a></p>
+<p>简介：</p>
+<p>W3Cschool是一个专业的编程入门学习及技术文档查询应用，提供包括HTML，CSS，Javascript，jQuery，C，PHP，Java，Python，Sql，Mysql等编程语言和开源技术的在线教程及使用手册，是类似国外w3schools的学习社区及菜鸟编程平台。</p>
+<h1 id="6、Node-js"><a href="#6、Node-js" class="headerlink" title="6、Node.js"></a>6、Node.js</h1><p>网址：<a href="https://nodejs.org/" target="_blank" rel="noopener">https://nodejs.org/</a></p>
+<p>简介：</p>
+<p>Node.js是一个Javascript运行环境(runtime)，发布于2009年5月，由Ryan Dahl开发，实质是对Chrome V8引擎进行了封装。Node.js对一些特殊用例进行优化，提供替代的API，使得V8在非浏览器环境下运行得更好。</p>
+<p>V8引擎执行Javascript的速度非常快，性能非常好。Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。</p>
+<p>Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p>
+<h1 id="7、npm-js"><a href="#7、npm-js" class="headerlink" title="7、npm.js"></a>7、npm.js</h1><p>网址：<a href="https://www.npmjs.com/" target="_blank" rel="noopener">https://www.npmjs.com/</a></p>
+<p>简介：</p>
+<p>npm 是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。通过 npm 可以安装、共享、分发代码,管理项目依赖关系。</p>
+<h1 id="8、vue-js"><a href="#8、vue-js" class="headerlink" title="8、vue.js"></a>8、vue.js</h1><p>网址：<a href="https://cn.vuejs.org/" target="_blank" rel="noopener">https://cn.vuejs.org/</a></p>
+<p>简介：</p>
+<p>Vue.js（读音 /vjuː/, 类似于 view）是一个构建数据驱动的 web 界面的渐进式框架。</p>
+<p>Vue.js 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。它不仅易于上手，还便于与第三方库或既有项目整合。</p>
+<p>另一方面，当与单文件组件和 Vue 生态系统支持的库结合使用时，Vue 也完全能够为复杂的单页应用程序提供驱动。</p>
+<h1 id="9、segmentfault（思否）"><a href="#9、segmentfault（思否）" class="headerlink" title="9、segmentfault（思否）"></a>9、segmentfault（思否）</h1><p>网址：<a href="https://segmentfault.com/" target="_blank" rel="noopener">https://segmentfault.com/</a></p>
+<p>简介：</p>
+<p>SegmentFault是中国领先的开发者技术社区。 为编程爱好者提供一个纯粹、高质的技术交流的平台， 与开发者一起学习、交流与成长。</p>
+<h1 id="10、Bootstrap"><a href="#10、Bootstrap" class="headerlink" title="10、Bootstrap"></a>10、Bootstrap</h1><p>网址：<a href="http://www.bootcss.com/" target="_blank" rel="noopener">http://www.bootcss.com/</a></p>
+<p>简介：</p>
+<p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。</p>
+<p>Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。</p>
+<p>Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。</p>
+<p>国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+<h1 id="11、博客园"><a href="#11、博客园" class="headerlink" title="11、博客园"></a>11、博客园</h1><p>网址：<a href="https://www.cnblogs.com/" target="_blank" rel="noopener">https://www.cnblogs.com/</a></p>
+<p>简介：</p>
+<p>博客园是一个面向开发者的知识分享社区。自创建以来，博客园一直致力并专注于为开发者打造一个纯净的技术交流社区，推动并帮助开发者通过互联网分享知识，从而让更多开发者从中受益。</p>
+<h1 id="12、菜鸟教程"><a href="#12、菜鸟教程" class="headerlink" title="12、菜鸟教程"></a>12、菜鸟教程</h1><p>网址：<a href="http://www.runoob.com/" target="_blank" rel="noopener">http://www.runoob.com/</a></p>
+<p>简介：</p>
+<p>菜鸟教程提供了最全的编程技术基础教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。 </p>
+<p>同时本站中也提供了大量的在线实例，通过实例，您可以更好的学习编程。</p>
+<h1 id="13、掘金"><a href="#13、掘金" class="headerlink" title="13、掘金"></a>13、掘金</h1><p>网址：<a href="https://juejin.im/" target="_blank" rel="noopener">https://juejin.im/</a></p>
+<p>简介：</p>
+<p>掘金是一个帮助开发者成长的社区，是给开发者用的 Hacker News，给设计师用的 Designer News，和给产品经理用的 Medium。</p>
+<p>掘金的技术文章由稀土上聚集的技术大牛和极客共同编辑为你筛选出最优质的干货，其中包括：Android、iOS、前端、后端等方面的内容。</p>
+<h1 id="14、开源中国"><a href="#14、开源中国" class="headerlink" title="14、开源中国"></a>14、开源中国</h1><p>网址：<a href="https://www.oschina.net/" target="_blank" rel="noopener">https://www.oschina.net/</a></p>
+<p>简介：</p>
+<p>开源中国成立于2008年8月，是目前国内最大的开源技术社区，拥有超过200万会员，形成了由开源软件库、代码分享、资讯、协作翻译、码云、众包、招聘等几大模块内容，为IT开发者提供了一个发现、使用、并交流开源技术的平台。</p>
+<h1 id="15、脚本之家"><a href="#15、脚本之家" class="headerlink" title="15、脚本之家"></a>15、脚本之家</h1><p>网址：<a href="http://www.jb51.net/" target="_blank" rel="noopener">http://www.jb51.net/</a></p>
+<p>简介：</p>
+<p>脚本之家是国内专业的网站建设资源、脚本编程学习类网站,提供asp、php、asp.net、javascript、jquery、vbscript、dos批处理、网页制作、网络编程、网站建设等编程资料。</p>
+<p>原作者: CSDN博主「programmer_feng」<br>原文链接：<a href="https://blog.csdn.net/programmer_feng/java/article/details/79792503" target="_blank" rel="noopener">https://blog.csdn.net/programmer_feng/java/article/details/79792503</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>利用hexo创建博客并部署到GitHub上</title>
+    <url>/2020/07/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h1 id="使用hexo框架搭建blog"><a href="#使用hexo框架搭建blog" class="headerlink" title="使用hexo框架搭建blog"></a>使用hexo框架搭建blog</h1><a id="more"></a>
+
+
+<h2 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h2><p>（1）Git<br><a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<h2 id="参考网址："><a href="#参考网址：" class="headerlink" title="参考网址："></a>参考网址：</h2><p>git安装 <a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>Git配置<a href="http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html" target="_blank" rel="noopener">http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html</a></p>
+<p>（2）Node.js<br><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<h2 id="安装过程："><a href="#安装过程：" class="headerlink" title="安装过程："></a>安装过程：</h2><p>（1）Node安装<br>按照安装过程依次点击即可，安装过程很简单。<br>（2）安装Git<br>按照网上的安装方式进行安装就可以了<br><a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html</a><br>（3）安装Hexo   （下面出现的检测全部是在git中进行的）<br>———————————————————————————————————————</p>
+<h2 id="检测node安装是否成功："><a href="#检测node安装是否成功：" class="headerlink" title="检测node安装是否成功："></a>检测node安装是否成功：</h2><p>node -v<br>（返回版本号）<br>npm -v<br>（返回版本号）</p>
+<p>———————————————————————————————————————</p>
+<h2 id="安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）"><a href="#安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）" class="headerlink" title="安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）"></a>安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）</h2><p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>检测<br>cnpm<br>（返回cnpm的信息）<br>cnpm -v<br>（返回cnpm的版本信息）</p>
+<h2 id="安装hexo（如果失败重新来过就可以了）"><a href="#安装hexo（如果失败重新来过就可以了）" class="headerlink" title="安装hexo（如果失败重新来过就可以了）"></a>安装hexo（如果失败重新来过就可以了）</h2><p>cnpm install -g hexo-cli<br>检测<br>hexo -v<br>（返回hexo的版本信息）</p>
+<p>初始化操作过程：<br>在本地建立blog文件夹<br>进入Git页面<br>pwd   （查询目录所在位置）<br>mkdir Blog   （在目录下建立文件夹Blog）（如果在以后的操作过程中出现问题无法解决就把这个文件夹删掉直接重新来过就可以了）<br>———————————————————————————————————————</p>
+<p>cd Blog/   （进入Blog文件夹）<br>pwd    （检测是否进入Blog文件夹）<br>———————————————————————————————————————</p>
+<p>hexo init  （即：初始化hexo）</p>
+<p>ls -l   （查看初始化获得的文件）</p>
+<p>hexo s   （启动hexo）</p>
+<p><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>这样就可以在本地4000端口查看自己的网站了</p>
+<h1 id="创建博客文章"><a href="#创建博客文章" class="headerlink" title="创建博客文章"></a>创建博客文章</h1><p>hexo new ‘文章题目’</p>
+<h1 id="进一步深化操作过程1（将网站部署到Github上）"><a href="#进一步深化操作过程1（将网站部署到Github上）" class="headerlink" title="进一步深化操作过程1（将网站部署到Github上）"></a>进一步深化操作过程1（将网站部署到Github上）</h1><p>首先申请一个github账号，然后再github中按照   自己的昵称+.github.io 建立一个仓库（repository）（例：hansonpang99.github.io）</p>
+<p>在Blog目录下安装一个hexo部署插件<br>cnpm install –save hexo-deployer-git</p>
+<p>找到Blog文件中的   _config.yml  文件，使用编译器打开，建议使用   Visual Studio Code打开<br>注：Visual Studio Code的好处：1.支持的语言种类多，<br>                             2.视图简洁<br>                             3.拥有插件种类多</p>
+<p>找到这部分代码，（原始的是没有repo，和branch的，而且type后面也没有东西）<br>对这段代码进行更改<br>type    一个名字，建议写成git方便识别<br>repo    repository仓库地址   将刚刚新建的github仓库地址复制到这里就可以了<br>branch  分支这里设置管理员  master</p>
+<p>更改以后进行保存<br>然后再Git里面输入 hexo d     将本地文件部署到github新建的仓库中<br>———————————————————————————————————————</p>
+<p>然后通过访问     https://+自己的仓库名   就可以访问部署到github上的blog了<br>（例：<a href="https://hansonpang99.github.io）" target="_blank" rel="noopener">https://hansonpang99.github.io）</a></p>
+<h1 id="进一步深化操作过程2（更换Blog的主题）"><a href="#进一步深化操作过程2（更换Blog的主题）" class="headerlink" title="进一步深化操作过程2（更换Blog的主题）"></a>进一步深化操作过程2（更换Blog的主题）</h1><p>这里以  yilia  主题为例进行更换<br>———————————————————————————————————————</p>
+<h2 id="首先下载-yilia-主题"><a href="#首先下载-yilia-主题" class="headerlink" title="首先下载  yilia  主题"></a>首先下载  yilia  主题</h2><p>在Git中输入  git clone <a href="http://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">http://github.com/litten/hexo-theme-yilia.git</a>  themes/yilia<br>                                 （克隆地址）               （克隆之后的本地位置）</p>
+<p>找到Blog文件中的   _config.yml  文件，使用编译器打开，建议使用   Visual Studio Code打开</p>
+<p>找到这部分代码（即theme）<br>将冒号后面的内容改为刚刚新建的yilia<br>———————————————————————————————————————<br>hexo clean            清除数据库之类<br>hexo g               生成静态网站<br>hexo d               将现在的文件部署到github中</p>
+<p>这样就实现了主题的更改</p>
+<h1 id="进一步深化操作过程3（在建好的博客中添加相册功能）"><a href="#进一步深化操作过程3（在建好的博客中添加相册功能）" class="headerlink" title="进一步深化操作过程3（在建好的博客中添加相册功能）"></a>进一步深化操作过程3（在建好的博客中添加相册功能）</h1><h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><p>安装python<br>下载地址：<a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a></p>
+<p>下载完成后点击安装，安装教程：<br><a href="https://blog.csdn.net/qq_25814003/article/details/80609729" target="_blank" rel="noopener">https://blog.csdn.net/qq_25814003/article/details/80609729</a><br>在安装时选择自定义安装，其他注意事项如图所示</p>
+<p>安装成功后，进行检测，进入cmd中输入  python<br>出现下图所示界面，则证明安装成功。</p>
+<h2 id="正式操作："><a href="#正式操作：" class="headerlink" title="正式操作："></a>正式操作：</h2><p>1.在github中创建一个新的仓库，命名为BlogBackup。</p>
+<p>2.将下面的github仓库中的文件以zip格式下载到本地<br>仓库地址：<a href="https://github.com/lawlite19/Blog-Back-Up" target="_blank" rel="noopener">https://github.com/lawlite19/Blog-Back-Up</a><br>具体操作：</p>
+<p>3.下载到本地后，在本地找一个合适的位置进行解压。<br>解压结果</p>
+<p>4.进入解压后的文件中，将min_photos和photos两个文件夹中的照片全部删除，并将自己要上传的照片放到photos文件夹中，照片的命名规则为：2015-05-01_XXX.jpg   （jpg可更改为其他图片格式）</p>
+<p>5.在解压后的文件中，使用Visaul Studio Code打开tool.py文件，并将文件中的地址改成自己的博客文件夹中的data.json地址。</p>
+<p>6.在解压后的文件中，右击鼠标，点击git bash here（出现该操作的前提是已安装git）</p>
+<p>7.将该文件提交到自己刚刚新建的github库（BlogBackup）中<br>具体操作：<br>在打开的Git页面中，<br>（1）输入 git init   （把public文件夹转成一个git仓库）<br>git add . （git add -A） （把该文件夹中所有的东西加载到本地仓库里）<br>git commit -m “test”    （提交信息）<br>git  remote add photo <a href="mailto:git@github.com">git@github.com</a>:hansonpang99/BlogBackup.git<br>（加粗部分对应你的仓库地址，如图所示）<br>git push photo master  （将文件提交到github仓库）<br>8.进入到你的博客目录下使用Git执行 hexo new page “photos”,就会出现一个这样的新目录</p>
+<p>9.配置 Yilia 主题让其显示出来.在Blog/themes/yilia/_config.yml文件中这样设置</p>
+<p>10.将样式文件放到photos文件夹下<br>样式文件地址：<br><a href="https://github.com/lawlite19/Blog-Back-Up/tree/master/blog_photos_copy" target="_blank" rel="noopener">https://github.com/lawlite19/Blog-Back-Up/tree/master/blog_photos_copy</a>  </p>
+<p>修改样式文件中的ins.js文件，主要是里面的render函数<br>其中的url对应到你的github放图片的地址（即第1步创建的仓库地址）</p>
+<p>11.进入图片文件夹中（即下载的Blog-Back-Up-master文件夹中）使用tool.py脚本处理图片<br>在Blog-Back-Up-master文件夹中打开Git页面中，输入  python tool.py  处理图片</p>
+<p>12.在本地的博客目录下，打开git<br>输入 hexo clean<br>     hexo g<br>     hexo s   （在本地检测是否成功，成功后执行下一步，否则解决问题）<br>     hexo d    （将文件部署到github）</p>
+<p>13．以后每次在photos中添加图片后，重复11,12步就可以完成部署到github了。</p>
+<h1 id="参考网址"><a href="#参考网址" class="headerlink" title="参考网址"></a>参考网址</h1><p>进一步深化操作过程4（添加背景音乐 （网易云音乐））<br>1.打开网易云音乐首页，复制选择的背景音乐分享外链<br><a href="https://music.163.com/" target="_blank" rel="noopener">https://music.163.com/</a>    在网易云网页中选中想要使用的音乐，进入播放界面，<br>点击   “生成外链播放器”</p>
+<p>（注：有版权的歌曲不能生成外链）<br>复制生成的代码</p>
+<p>2、引入播放器代码<br>在themes/yilia/layout/_partial/left-col.ejs文件nav标签中添加如下代码<br>将代码中的红色部分和刚刚复制的网易云外链代码进行对照，将对应部分进行替换（不替换的话使用的是 纸短情长 歌曲）</p>
+<!-- 网易云音乐插件 -->
+<p>&lt;% if (theme.music &amp;&amp; theme.music.enable){ %&gt;<br>    <div style="position:absolute; bottom:120px left:auto; width:85%"><br>        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=<%=theme.music.id||1334445174%>&auto=<%=theme.music.autoplay?1:0%>&height=32"></iframe><br>    </div><br>&lt;% } %&gt;</p>
+<p>3、在yilia主题配置文件中添加属性</p>
+<h1 id="网易云音乐插件"><a href="#网易云音乐插件" class="headerlink" title="网易云音乐插件"></a>网易云音乐插件</h1><p>music:<br>  enable: true<br>  #id: 1332647902  # 网易云分享的ID<br>  autoplay: true  # 是否开启自动播放<br>（注：在科学上网条件下，无法自动播放）<br>参考网址：<br><a href="https://zhousiwei.gitee.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/</a><br>进一步深化操作过程5（添加helper-live2d动态模型）<br>参考网址：<br><a href="https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</a></p>
+<p>进行完这一步就可以在hexo博客中看到了</p>
+<p>这里是默认的设置，如果想要安装自己喜欢的就继续网站教程<br>其他板娘模板介绍：<br><a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">https://huaji8.top/post/live2d-plugin-2.0/</a><br>挑选一个喜欢的板娘然后按照教程进行安装。</p>
+<p>注：下面这个主题需要是Darwin系统</p>
+<p>只执行参考网址的第一步也可以实现，保持默认就可以了，我就是这样。</p>
+<p>视频中使用到的网址：</p>
+<p>Hexo yilia 主题一揽子使用方案<br><a href="https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8F%90%E7%A4%BA%E7%BC%BA%E5%A4%B1%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_%E4%B8%BB%E9%A2%98%E4%B8%80%E6%8F%BD%E5%AD%90%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8F%90%E7%A4%BA%E7%BC%BA%E5%A4%B1%E6%A8%A1%E5%9D%97</a></p>
+<p>Hexo博客yilia主题添加背景音乐 （网易云音乐）<br><a href="https://joeybling.github.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/" target="_blank" rel="noopener">https://joeybling.github.io/2019/05/09/Hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90(%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90)/</a></p>
+<!-- more -->
+<p>Hexo Yilia 高级配置<br><a href="http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8" target="_blank" rel="noopener">http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8</a></p>
+<p>Hexo博客添加helper-live2d动态模型插件<br><a href="https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</a></p>
+<p>Hexo添加Live2D看板娘+模型预览<br><a href="http://element-ui.cn/news_show_22203.shtml" target="_blank" rel="noopener">http://element-ui.cn/news_show_22203.shtml</a></p>
+]]></content>
+  </entry>
+</search>
