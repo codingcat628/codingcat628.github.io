@@ -79,7 +79,7 @@
     <content><![CDATA[<h2 id="总结一下我认为学习Java的路线："><a href="#总结一下我认为学习Java的路线：" class="headerlink" title="总结一下我认为学习Java的路线："></a>总结一下我认为学习Java的路线：</h2><a id="more"></a>
 <ul>
 <li>Java基础–&gt;流程控制–&gt;面向对象(包括Java语法)–&gt;Java集合–&gt;Java IO流–&gt;异常–&gt;多线程–&gt;网络编程–&gt;反射</li>
-<li>avaWeb基础–&gt;HTML/CSS/JavaScript/jQuery–&gt;Tomcat–&gt;XML/注解-&gt;Servlet–&gt;HTTP–&gt;Filter过滤器和监听器–&gt;JSP–&gt;AJAX/JSON–&gt;数据库(MySQL)–&gt;JDBC和DbUtils</li>
+<li>JavaWeb基础–&gt;HTML/CSS/JavaScript/jQuery–&gt;Tomcat–&gt;XML/注解-&gt;Servlet–&gt;HTTP–&gt;Filter过滤器和监听器–&gt;JSP–&gt;AJAX/JSON–&gt;数据库(MySQL)–&gt;JDBC和DbUtils</li>
 <li>项目管理和框架–&gt;Maven–&gt;SpringBoot</li>
 <li>Linux基本命令</li>
 </ul>
