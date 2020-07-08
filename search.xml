@@ -1,6 +1,445 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2020/07/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>CSS知识点总结</title>
+    <url>/2020/07/08/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="什么是-CSS"><a href="#什么是-CSS" class="headerlink" title="什么是 CSS?"></a>什么是 CSS?</h1><p>CSS 指层叠样式表 (Cascading Style Sheets)</p>
+<a id="more"></a>
+
+<p>样式定义如何显示 HTML 元素<br>样式通常存储在样式表中<br>把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题<br>外部样式表可以极大提高工作效率<br>外部样式表通常存储在 CSS 文件中<br>多个样式定义可层叠为一个</p>
+<h1 id="id-和-class-选择器"><a href="#id-和-class-选择器" class="headerlink" title="id 和 class 选择器"></a>id 和 class 选择器</h1><p>如果你要在HTML元素中设置CSS样式，你需要在元素中设置”id” 和 “class”选择器。</p>
+<h2 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h2><p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+<p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 “#” 来定义。</p>
+<p>以下的样式规则应用于元素属性 id=“para1”:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#para1</span><br><span class="line">&#123;</span><br><span class="line">    text-align:center;</span><br><span class="line">    color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用。</strong></p>
+<h2 id="class-选择器"><a href="#class-选择器" class="headerlink" title="class 选择器"></a>class 选择器</h2><p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+<p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点”.”号显示：</p>
+<p>在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.center &#123;text-align:center;&#125;</span><br></pre></td></tr></table></figure>
+<p>你也可以指定特定的HTML元素使用class。</p>
+<p>在以下实例中, 所有的 p 元素使用 class=“center” 让该元素的文本居中:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p.center &#123;text-align:center;&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Remark 类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</strong></p>
+<h1 id="如何插入样式表"><a href="#如何插入样式表" class="headerlink" title="如何插入样式表"></a>如何插入样式表</h1><p>插入样式表的方法有三种:</p>
+<h2 id="外部样式表-External-style-sheet"><a href="#外部样式表-External-style-sheet" class="headerlink" title="外部样式表(External style sheet)"></a>外部样式表(External style sheet)</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; type&#x3D;&quot;text&#x2F;css&quot; href&#x3D;&quot;mystyle.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="内部样式表-Internal-style-sheet"><a href="#内部样式表-Internal-style-sheet" class="headerlink" title="内部样式表(Internal style sheet)"></a>内部样式表(Internal style sheet)</h2><p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">hr &#123;color:sienna;&#125;</span><br><span class="line">p &#123;margin-left:20px;&#125;</span><br><span class="line">body &#123;background-image:url(&quot;images&#x2F;back40.gif&quot;);&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="内联样式-Inline-style"><a href="#内联样式-Inline-style" class="headerlink" title="内联样式(Inline style)"></a>内联样式(Inline style)</h2><p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。</p>
+<p>要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;p style&#x3D;&quot;color:sienna;margin-left:20px&quot;&gt;这是一个段落。&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="多重样式"><a href="#多重样式" class="headerlink" title="多重样式"></a>多重样式</h2><p>如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。</p>
+<p>例如，外部样式表拥有针对 h3 选择器的三个属性：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h3</span><br><span class="line">&#123;</span><br><span class="line">    color:red;</span><br><span class="line">    text-align:left;</span><br><span class="line">    font-size:8pt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>而内部样式表拥有针对 h3 选择器的两个属性：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h3</span><br><span class="line">&#123;</span><br><span class="line">    text-align:right;</span><br><span class="line">    font-size:20pt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>假如拥有内部样式表的这个页面同时与外部样式表链接，那么 h3 得到的样式是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">color:red;</span><br><span class="line">text-align:right;</span><br><span class="line">font-size:20pt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="多重样式优先级"><a href="#多重样式优先级" class="headerlink" title="多重样式优先级"></a>多重样式优先级</h3><p>样式表允许以多种方式规定样式信息。样式可以规定在单个的 HTML 元素中，在 HTML 页的头元素中，或在一个外部的 CSS 文件中。甚至可以在同一个 HTML 文档内部引用多个外部样式表。</p>
+<p>一般情况下，优先级如下：</p>
+<p><strong>(内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式</strong></p>
+<h2 id="多重样式优先级深入概念"><a href="#多重样式优先级深入概念" class="headerlink" title="多重样式优先级深入概念"></a>多重样式优先级深入概念</h2><p>优先级是浏览器是通过判断哪些属性值与元素最相关以决定并应用到该元素上的。优先级仅由选择器组成的匹配规则决定的。</p>
+<p>优先级就是分配给指定的CSS声明的一个权重，它由匹配的选择器中的每一种选择器类型的数值决定。</p>
+<p>优先级顺序<br>下列是一份优先级逐级增加的选择器列表：</p>
+<p>通用选择器（*）</p>
+<p>元素(类型)选择器</p>
+<p>类选择器</p>
+<p>属性选择器</p>
+<p>伪类</p>
+<p>ID 选择器</p>
+<p>内联样式</p>
+<p>!important 规则例外</p>
+<p>当 !important 规则被应用在一个样式声明中时,该样式声明会覆盖CSS中任何其他的声明, 无论它处在声明列表中的哪里. 尽管如此, !important规则还是与优先级毫无关系.使用 !important 不是一个好习惯，因为它改变了你样式表本来的级联规则，从而使其难以调试。</p>
+<p>一些经验法则：</p>
+<p>Always 要优化考虑使用样式规则的优先级来解决问题而不是 !important</p>
+<p>Only 只在需要覆盖全站或外部 css（例如引用的 ExtJs 或者 YUI ）的特定页面中使用 !important</p>
+<p>Never 永远不要在全站范围的 css 上使用 !important</p>
+<p>Never 永远不要在你的插件中使用 !important</p>
+<p>权重计算：</p>
+<ol>
+<li>内联样式表的权值最高 1000；</li>
+<li>ID 选择器的权值为 100</li>
+<li>Class 类选择器的权值为 10</li>
+<li>HTML 标签选择器的权值为 1</li>
+<li>利用选择器的权值进行计算比较，em 显示蓝色，示例如下：<a href="https://c.runoob.com/codedemo/3048" target="_blank" rel="noopener">https://c.runoob.com/codedemo/3048</a></li>
+</ol>
+<p>CSS 优先级法则：</p>
+<p>A 选择器都有一个权值，权值越大越优先；</p>
+<p>B 当权值相等时，后出现的样式表设置要优于先出现的样式表设置；</p>
+<p>C 创作者的规则高于浏览者：即网页编写者设置的CSS 样式的优先权高于浏览器所设置的样式；</p>
+<p>D 继承的CSS 样式不如后来指定的CSS 样式；</p>
+<p>E 在同一组属性设置中标有“!important”规则的优先级最大；示例如下：<a href="https://c.runoob.com/codedemo/3049" target="_blank" rel="noopener">https://c.runoob.com/codedemo/3049</a></p>
+<p>结果：在Firefox 下显示为蓝色；在IE 6 下显示为红色；<br>这里引入一张流行的CSS权重关系图：</p>
+<h1 id="CSS-背景"><a href="#CSS-背景" class="headerlink" title="CSS 背景"></a>CSS 背景</h1><p>CSS 背景属性用于定义HTML元素的背景。</p>
+<p>CSS 属性定义背景效果:</p>
+<p>background-color</p>
+<p>background-image</p>
+<p>background-repeat</p>
+<p>background-attachment</p>
+<p>background-position</p>
+<h2 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h2><p>background-color 属性定义了元素的背景颜色.</p>
+<p>页面的背景颜色使用在body的选择器中:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;background-color:#b0c4de;&#125;</span><br></pre></td></tr></table></figure>
+<p>CSS中，颜色值通常以以下方式定义:</p>
+<p>十六进制 - 如：”#ff0000”</p>
+<p>RGB - 如：“rgb(255,0,0)”</p>
+<p>颜色名称 - 如：“red”</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">实例</span><br><span class="line">h1 &#123;background-color:#6495ed;&#125;</span><br><span class="line">p &#123;background-color:#e0ffff;&#125;</span><br><span class="line">div &#123;background-color:#b0c4de;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="背景图像"><a href="#背景图像" class="headerlink" title="背景图像"></a>背景图像</h2><p>background-image 属性描述了元素的背景图像.</p>
+<p>默认情况下，背景图像进行平铺重复显示，以覆盖整个元素实体.</p>
+<p>页面背景图片设置实例:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;background-image:url(&#39;paper.gif&#39;);&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525071143924.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt="背景图片"></p>
+<h2 id="背景图像-水平或垂直平铺"><a href="#背景图像-水平或垂直平铺" class="headerlink" title="背景图像 - 水平或垂直平铺"></a>背景图像 - 水平或垂直平铺</h2><p>默认情况下 background-image 属性会在页面的水平或者垂直方向平铺。</p>
+<p>一些图像如果在水平方向与垂直方向平铺，这样看起来很不协调，如下所示:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">background-image:url(&#39;gradient2.png&#39;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525071356771.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt="图片"></p>
+<p>如果图像只在水平方向平铺 (repeat-x), 页面背景会更好些:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">background-image:url(&#39;gradient2.png&#39;);</span><br><span class="line">background-repeat:repeat-x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200525071306105.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt="图片"></p>
+<h2 id="背景图像-设置定位与不平铺"><a href="#背景图像-设置定位与不平铺" class="headerlink" title="背景图像- 设置定位与不平铺"></a>背景图像- 设置定位与不平铺</h2><p>Remark 让背景图像不影响文本的排版</p>
+<p>如果你不想让图像平铺，你可以使用 background-repeat 属性:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">background-image:url(&#39;img_tree.png&#39;);</span><br><span class="line">background-repeat:no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200525071557482.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt="图片"></p>
+<p>以上实例中，背景图像与文本显示在同一个位置，为了让页面排版更加合理，不影响文本的阅读，我们可以改变图像的位置。</p>
+<p>可以利用 background-position 属性改变图像在背景中的位置:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body</span><br><span class="line">&#123;</span><br><span class="line">background-image:url(&#39;img_tree.png&#39;);</span><br><span class="line">background-repeat:no-repeat;</span><br><span class="line">background-position:right top;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525071624896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt="图片"></p>
+<h1 id="CSS-文本格式"><a href="#CSS-文本格式" class="headerlink" title="CSS 文本格式"></a>CSS 文本格式</h1><h2 id="文本颜色"><a href="#文本颜色" class="headerlink" title="文本颜色"></a>文本颜色</h2><p>颜色属性被用来设置文字的颜色。</p>
+<p>颜色是通过CSS最经常的指定：</p>
+<p>十六进制值 - 如: ＃FF0000<br>一个RGB值 - 如: RGB(255,0,0)<br>颜色的名称 - 如: red<br>参阅 CSS 颜色值 查看完整的颜色值。</p>
+<p>一个网页的背景颜色是指在主体内的选择：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;color:red;&#125;</span><br><span class="line">h1 &#123;color:#00ff00;&#125;</span><br><span class="line">h2 &#123;color:rgb(255,0,0);&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="文本的对齐方式"><a href="#文本的对齐方式" class="headerlink" title="文本的对齐方式"></a>文本的对齐方式</h2><p>文本排列属性是用来设置文本的水平对齐方式。</p>
+<p>文本可居中或对齐到左或右,两端对齐.</p>
+<p>当text-align设置为”justify”，每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1 &#123;text-align:center;&#125;</span><br><span class="line">p.date &#123;text-align:right;&#125;</span><br><span class="line">p.main &#123;text-align:justify;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h2><p>text-decoration 属性用来设置或删除文本的装饰。</p>
+<p>从设计的角度看 text-decoration属性主要是用来删除链接的下划线：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a &#123;text-decoration:none;&#125;</span><br></pre></td></tr></table></figure>
+<p>也可以这样装饰文字：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1 &#123;text-decoration:overline;&#125;</span><br><span class="line">h2 &#123;text-decoration:line-through;&#125;</span><br><span class="line">h3 &#123;text-decoration:underline;&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525071835808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h2 id="文本转换"><a href="#文本转换" class="headerlink" title="文本转换"></a>文本转换</h2><p>文本转换属性是用来指定在一个文本中的大写和小写字母。</p>
+<p>可用于所有字句变成大写或小写字母，或每个单词的首字母大写。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p.uppercase &#123;text-transform:uppercase;&#125;</span><br><span class="line">p.lowercase &#123;text-transform:lowercase;&#125;</span><br><span class="line">p.capitalize &#123;text-transform:capitalize;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="文本缩进"><a href="#文本缩进" class="headerlink" title="文本缩进"></a>文本缩进</h2><p>文本缩进属性是用来指定文本的第一行的缩进。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p &#123;text-indent:50px;&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525071930343.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-字体"><a href="#CSS-字体" class="headerlink" title="CSS 字体"></a>CSS 字体</h1><p>CSS字体属性定义字体，加粗，大小，文字样式。</p>
+<h2 id="CSS字型"><a href="#CSS字型" class="headerlink" title="CSS字型"></a>CSS字型</h2><p>在CSS中，有两种类型的字体系列名称：</p>
+<p>通用字体系列 - 拥有相似外观的字体系统组合（如 “Serif” 或 “Monospace”）<br>特定字体系列 - 一个特定的字体系列（如 “Times” 或 “Courier”）</p>
+<p><img src="https://img-blog.csdnimg.cn/20200525072030807.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p>字体系列<br>font-family 属性设置文本的字体系列。</p>
+<p>font-family 属性应该设置几个字体名称作为一种”后备”机制，如果浏览器不支持第一种字体，他将尝试下一种字体。</p>
+<p>注意: 如果字体系列的名称超过一个字，它必须用引号，如Font Family：“宋体”。</p>
+<p>多个字体系列是用一个逗号分隔指明：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p&#123;font-family:&quot;Times New Roman&quot;, Times, serif;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h2><p>主要是用于指定斜体文字的字体样式属性。</p>
+<p>这个属性有三个值：</p>
+<p>正常 - 正常显示文本<br>斜体 - 以斜体字显示的文字<br>倾斜的文字 - 文字向一边倾斜（和斜体非常类似，但不太支持）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p.normal &#123;font-style:normal;&#125;</span><br><span class="line">p.italic &#123;font-style:italic;&#125;</span><br><span class="line">p.oblique &#123;font-style:oblique;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h2><p>font-size 属性设置文本的大小。</p>
+<p>能否管理文字的大小，在网页设计中是非常重要的。但是，你不能通过调整字体大小使段落看上去像标题，或者使标题看上去像段落。</p>
+<p>请务必使用正确的HTML标签，就</p>
+<h3 id=""><a href="#" class="headerlink" title="-"></a>-</h3><h3 id="表示标题和"><a href="#表示标题和" class="headerlink" title="表示标题和"></a>表示标题和</h3><p>表示段落：</p>
+<p>字体大小的值可以是绝对或相对的大小。</p>
+<p>绝对大小：<br>设置一个指定大小的文本<br>不允许用户在所有浏览器中改变文本大小<br>确定了输出的物理尺寸时绝对大小很有用</p>
+<p>相对大小：<br>相对于周围的元素来设置大小<br>允许用户在浏览器中改变文字大小<br>Remark 如果你不指定一个字体的大小，默认大小和普通文本段落一样，是16像素（16px=1em）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1 &#123;font-size:40px;&#125;</span><br><span class="line">h2 &#123;font-size:30px;&#125;</span><br><span class="line">p &#123;font-size:14px;&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="用em来设置字体大小"><a href="#用em来设置字体大小" class="headerlink" title="用em来设置字体大小"></a>用em来设置字体大小</h2><p>为了避免Internet Explorer 中无法调整文本的问题，许多开发者使用 em 单位代替像素。</p>
+<p>em的尺寸单位由W3C建议。</p>
+<p>1em和当前字体大小相等。在浏览器中默认的文字大小是16px。</p>
+<p>因此，1em的默认大小是16px。可以通过下面这个公式将像素转换为em：px/16=em</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1 &#123;font-size:2.5em;&#125; &#x2F;* 40px&#x2F;16&#x3D;2.5em *&#x2F;</span><br><span class="line">h2 &#123;font-size:1.875em;&#125; &#x2F;* 30px&#x2F;16&#x3D;1.875em *&#x2F;</span><br><span class="line">p &#123;font-size:0.875em;&#125; &#x2F;* 14px&#x2F;16&#x3D;0.875em *&#x2F;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525072311504.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-链接"><a href="#CSS-链接" class="headerlink" title="CSS 链接"></a>CSS 链接</h1><p>不同的链接可以有不同的样式。</p>
+<p>链接的样式，可以用任何CSS属性（如颜色，字体，背景等）。</p>
+<p>特别的链接，可以有不同的样式，这取决于他们是什么状态。</p>
+<p>这四个链接状态是：</p>
+<p>a:link - 正常，未访问过的链接<br>a:visited - 用户已访问过的链接<br>a:hover - 当用户鼠标放在链接上时<br>a:active - 链接被点击的那一刻</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a:link &#123;color:#000000;&#125;      &#x2F;* 未访问链接*&#x2F;</span><br><span class="line">a:visited &#123;color:#00FF00;&#125;  &#x2F;* 已访问链接 *&#x2F;</span><br><span class="line">a:hover &#123;color:#FF00FF;&#125;  &#x2F;* 鼠标移动到链接上 *&#x2F;</span><br><span class="line">a:active &#123;color:#0000FF;&#125;  &#x2F;* 鼠标点击时 *&#x2F;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525072425571.png" alt=""></p>
+<h1 id="CSS列表属性："><a href="#CSS列表属性：" class="headerlink" title="CSS列表属性："></a>CSS列表属性：</h1><p>设置不同的列表项标记为有序列表<br>设置不同的列表项标记为无序列表<br>设置列表项标记为图像</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>在HTML中，有两种类型的列表：</p>
+<p>无序列表 - 列表项标记用特殊图形（如小黑点、小方框等）<br>有序列表 - 列表项的标记有数字或字母<br>使用CSS，可以列出进一步的样式，并可用图像作列表项标记。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">不同的列表项标记</span><br><span class="line">list-style-type属性指定列表项标记的类型是：</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ul.a &#123;list-style-type: circle;&#125;</span><br><span class="line">ul.b &#123;list-style-type: square;&#125;</span><br><span class="line"> </span><br><span class="line">ol.c &#123;list-style-type: upper-roman;&#125;</span><br><span class="line">ol.d &#123;list-style-type: lower-alpha;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200525072630596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h2 id="作为列表项标记的图像"><a href="#作为列表项标记的图像" class="headerlink" title="作为列表项标记的图像"></a>作为列表项标记的图像</h2><p>要指定列表项标记的图像，使用列表样式图像属性：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ul</span><br><span class="line">&#123;</span><br><span class="line">    list-style-image: url(&#39;sqpurple.gif&#39;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525072720130.png" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20200525072755984.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-表格"><a href="#CSS-表格" class="headerlink" title="CSS 表格"></a>CSS 表格</h1><p>使用 CSS 可以使 HTML 表格更美观。</p>
+<h2 id="表格边框"><a href="#表格边框" class="headerlink" title="表格边框"></a>表格边框</h2><p>指定CSS表格边框，使用border属性。</p>
+<p>下面的例子指定了一个表格的Th和TD元素的黑色边框：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">table, th, td</span><br><span class="line">&#123;</span><br><span class="line">    border: 1px solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>请注意，在上面的例子中的表格有双边框。这是因为表和th/ td元素有独立的边界。</p>
+<p>为了显示一个表的单个边框，使用 border-collapse属性。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">table</span><br><span class="line">&#123;</span><br><span class="line">    border-collapse:collapse;</span><br><span class="line">&#125;</span><br><span class="line">table,th, td</span><br><span class="line">&#123;</span><br><span class="line">    border: 1px solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>border-collapse 属性设置表格的边框是否被折叠成一个单一的边框或隔开：<br><img src="https://img-blog.csdnimg.cn/20200525073025876.png" alt=""></p>
+<h2 id="表格宽度和高度"><a href="#表格宽度和高度" class="headerlink" title="表格宽度和高度"></a>表格宽度和高度</h2><p>Width和height属性定义表格的宽度和高度。</p>
+<p>下面的例子是设置100％的宽度，50像素的th元素的高度的表格：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">table </span><br><span class="line">&#123;</span><br><span class="line">    width:100%;</span><br><span class="line">&#125;</span><br><span class="line">th</span><br><span class="line">&#123;</span><br><span class="line">    height:50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="表格文字对齐"><a href="#表格文字对齐" class="headerlink" title="表格文字对齐"></a>表格文字对齐</h2><p>表格中的文本对齐和垂直对齐属性。</p>
+<p>text-align属性设置水平对齐方式，向左，右，或中心：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">td</span><br><span class="line">&#123;</span><br><span class="line">    height:50px;</span><br><span class="line">    vertical-align:bottom;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="表格填充"><a href="#表格填充" class="headerlink" title="表格填充"></a>表格填充</h2><p>如果在表的内容中控制空格之间的边框，应使用td和th元素的填充属性：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">td</span><br><span class="line">&#123;</span><br><span class="line">    padding:15px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="CSS-盒子模型-Box-Model"><a href="#CSS-盒子模型-Box-Model" class="headerlink" title="CSS 盒子模型(Box Model)"></a>CSS 盒子模型(Box Model)</h1><p>所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。</p>
+<p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
+<p>盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
+<p>下面的图片说明了盒子模型(Box Model)：<br><img src="https://img-blog.csdnimg.cn/20200525073235846.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p>在这里插入图片描述<br>Margin(外边距) - 清除边框外的区域，外边距是透明的。</p>
+<p>Border(边框) - 围绕在内边距和内容外的边框。</p>
+<p>Padding(内边距) - 清除内容周围的区域，内边距是透明的。</p>
+<p>Content(内容) - 盒子的内容，显示文本和图像。</p>
+<h2 id="元素的宽度和高度"><a href="#元素的宽度和高度" class="headerlink" title="元素的宽度和高度"></a>元素的宽度和高度</h2><p>Remark重要: 当您指定一个 CSS 元素的宽度和高度属性时，你只是设置内容区域的宽度和高度。要知道，完整大小的元素，你还必须添加内边距，边框和边距。</p>
+<p>下面的例子中的元素的总宽度为300px：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">    width: 300px;</span><br><span class="line">    border: 25px solid green;</span><br><span class="line">    padding: 25px;</span><br><span class="line">    margin: 25px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525073543602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p>让我们自己算算：<br>300px (宽)</p>
+<ul>
+<li>50px (左 + 右填充)<ul>
+<li>50px (左 + 右边框)</li>
+<li>50px (左 + 右边距)<br>= 450px</li>
+</ul>
+</li>
+</ul>
+<p>试想一下，你只有250像素的空间。让我们设置总宽度为250像素的元素</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">    width: 220px;</span><br><span class="line">    padding: 10px;</span><br><span class="line">    border: 5px solid gray;</span><br><span class="line">    margin: 0; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>最终元素的总宽度计算公式是这样的：</strong></p>
+<p>总元素的宽度=宽度+左填充+右填充+左边框+右边框+左边距+右边距</p>
+<p><strong>元素的总高度最终计算公式是这样的：</strong></p>
+<p>总元素的高度=高度+顶部填充+底部填充+上边框+下边框+上边距+下边距**</p>
+<h1 id="CSS-边框属性"><a href="#CSS-边框属性" class="headerlink" title="CSS 边框属性"></a>CSS 边框属性</h1><p>CSS边框属性允许你指定一个元素边框的样式和颜色。</p>
+<h2 id="边框样式"><a href="#边框样式" class="headerlink" title="边框样式"></a>边框样式</h2><p>在这里插入图片描述<br><img src="https://img-blog.csdnimg.cn/20200525073804972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h2 id="边框宽度"><a href="#边框宽度" class="headerlink" title="边框宽度"></a>边框宽度</h2><p>您可以通过 border-width 属性为边框指定宽度。</p>
+<p>为边框指定宽度有两种方法：可以指定长度值，比如 2px 或 0.1em(单位为 px, pt, cm, em 等)，或者使用 3 个关键字之一，它们分别是 thick 、medium（默认值） 和 thin。</p>
+<p>注意：CSS 没有定义 3 个关键字的具体宽度，所以一个用户可能把 thick 、medium 和 thin 分别设置为等于 5px、3px 和 2px，而另一个用户则分别设置为 3px、2px 和 1px。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p.one</span><br><span class="line">&#123;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-width:5px;</span><br><span class="line">&#125;</span><br><span class="line">p.two</span><br><span class="line">&#123;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-width:medium;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="边框-单独设置各边"><a href="#边框-单独设置各边" class="headerlink" title="边框-单独设置各边"></a>边框-单独设置各边</h2><p>在CSS中，可以指定不同的侧面不同的边框：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p</span><br><span class="line">&#123;</span><br><span class="line">    border-top-style:dotted;</span><br><span class="line">    border-right-style:solid;</span><br><span class="line">    border-bottom-style:dotted;</span><br><span class="line">    border-left-style:solid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525073920457.png" alt=""></p>
+<p>border-style属性可以有1-4个值：</p>
+<p>border-style:dotted solid double dashed;<br>上边框是 dotted<br>右边框是 solid<br>底边框是 double<br>左边框是 dashed</p>
+<p>border-style:dotted solid double;<br>上边框是 dotted<br>左、右边框是 solid<br>底边框是 double</p>
+<p>border-style:dotted solid;<br>上、底边框是 dotted<br>右、左边框是 solid</p>
+<p>border-style:dotted;<br>四面边框是 dotted</p>
+<p>边框-简写属性<br>上面的例子用了很多属性来设置边框。</p>
+<p>你也可以在一个属性中设置边框。</p>
+<p>你可以在”border”属性中设置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">border-width</span><br><span class="line">border-style (required)</span><br><span class="line">border-color</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">border:5px solid red;</span><br></pre></td></tr></table></figure>
+
+<h1 id="CSS-轮廓（outline）"><a href="#CSS-轮廓（outline）" class="headerlink" title="CSS 轮廓（outline）"></a>CSS 轮廓（outline）</h1><p><img src="https://img-blog.csdnimg.cn/20200525074048637.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20200525074113390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-margin-外边距"><a href="#CSS-margin-外边距" class="headerlink" title="CSS margin(外边距)"></a>CSS margin(外边距)</h1><p><img src="https://img-blog.csdnimg.cn/20200525074152523.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20200525074214274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">margin属性可以有一到四个值。</span><br><span class="line"></span><br><span class="line">margin:25px 50px 75px 100px;</span><br><span class="line">上边距为25px</span><br><span class="line">右边距为50px</span><br><span class="line">下边距为75px</span><br><span class="line">左边距为100px</span><br><span class="line"></span><br><span class="line">margin:25px 50px 75px;</span><br><span class="line">上边距为25px</span><br><span class="line">左右边距为50px</span><br><span class="line">下边距为75px</span><br><span class="line"></span><br><span class="line">margin:25px 50px;</span><br><span class="line">上下边距为25px</span><br><span class="line">左右边距为50px</span><br><span class="line"></span><br><span class="line">margin:25px;</span><br><span class="line">所有的4个边距都是25px</span><br></pre></td></tr></table></figure>
+<h1 id="CSS-padding（填充）"><a href="#CSS-padding（填充）" class="headerlink" title="CSS padding（填充）"></a>CSS padding（填充）</h1><p><img src="https://img-blog.csdnimg.cn/20200525074302177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20200525074323842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p>Padding属性，可以有一到四个值。</p>
+<p>padding:25px 50px 75px 100px;</p>
+<p>上填充为25px<br>右填充为50px<br>下填充为75px<br>左填充为100px<br>padding:25px 50px 75px;</p>
+<p>上填充为25px<br>左右填充为50px<br>下填充为75px<br>padding:25px 50px;</p>
+<p>上下填充为25px<br>左右填充为50px<br>padding:25px;</p>
+<p>所有的填充都是25px</p>
+<h1 id="CSS分组和嵌套-选择器"><a href="#CSS分组和嵌套-选择器" class="headerlink" title="CSS分组和嵌套 选择器"></a>CSS分组和嵌套 选择器</h1><h2 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h2><p>在样式表中有很多具有相同样式的元素。<br>为了尽量减少代码，你可以使用分组选择器。</p>
+<p>每个选择器用逗号分隔。</p>
+<p>在下面的例子中，我们对以上代码使用分组选择器：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1,h2,p</span><br><span class="line">&#123;</span><br><span class="line">    color:green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="嵌套选择器"><a href="#嵌套选择器" class="headerlink" title="嵌套选择器"></a>嵌套选择器</h2><p>它可能适用于选择器内部的选择器的样式。</p>
+<p>在下面的例子设置了三个样式：</p>
+<p>p{ }: 为所有 p 元素指定一个样式。<br>.marked{ }: 为所有 class=“marked” 的元素指定一个样式。<br>.marked p{ }: 为所有 class=“marked” 元素内的 p 元素指定一个样式。<br>p.marked{ }: 为所有 class=“marked” 的 p 元素指定一个样式。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">    text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">.marked</span><br><span class="line">&#123;</span><br><span class="line">    background-color:red;</span><br><span class="line">&#125;</span><br><span class="line">.marked p</span><br><span class="line">&#123;</span><br><span class="line">    color:white;</span><br><span class="line">&#125;</span><br><span class="line">p.marked&#123;</span><br><span class="line">    text-decoration:underline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="CSS-尺寸-Dimension"><a href="#CSS-尺寸-Dimension" class="headerlink" title="CSS 尺寸 (Dimension)"></a>CSS 尺寸 (Dimension)</h1><p>CSS 尺寸 (Dimension) 属性允许你控制元素的高度和宽度。同样，它允许你增加行间距。<br><img src="https://img-blog.csdnimg.cn/20200525074518440.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-Display-显示-与-Visibility（可见性）"><a href="#CSS-Display-显示-与-Visibility（可见性）" class="headerlink" title="CSS Display(显示) 与 Visibility（可见性）"></a>CSS Display(显示) 与 Visibility（可见性）</h1><p>隐藏元素 - display:none或visibility:hidden<br>隐藏一个元素可以通过把display属性设置为”none”，或把visibility属性设置为”hidden”。但是请注意，这两种方法会产生不同的结果。</p>
+<p>visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。</p>
+<p>display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。</p>
+<h1 id="CSS-Position-定位"><a href="#CSS-Position-定位" class="headerlink" title="CSS Position(定位)"></a>CSS Position(定位)</h1><p>position 属性指定了元素的定位类型。</p>
+<p>position 属性的五个值：</p>
+<p>static</p>
+<p>relative</p>
+<p>fixed</p>
+<p>absolute</p>
+<p>sticky</p>
+<p>元素可以使用的顶部，底部，左侧和右侧属性定位。然而，这些属性无法工作，除非是先设定position属性。他们也有不同的工作方式，这取决于定位方法。<br>static 定位</p>
+<p>HTML 元素的默认值，即没有定位，遵循正常的文档流对象。</p>
+<p>静态定位的元素不会受到 top, bottom, left, right影响。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">div.static &#123;</span><br><span class="line">    position: static;</span><br><span class="line">    border: 3px solid #73AD21;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="fixed-定位"><a href="#fixed-定位" class="headerlink" title="fixed 定位"></a>fixed 定位</h2><p>元素的位置相对于浏览器窗口是固定位置。</p>
+<p>即使窗口是滚动的它也不会移动：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p.pos_fixed</span><br><span class="line">&#123;</span><br><span class="line">    position:fixed;</span><br><span class="line">    top:30px;</span><br><span class="line">    right:5px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="relative-定位"><a href="#relative-定位" class="headerlink" title="relative 定位"></a>relative 定位</h2><p>相对定位元素的定位是相对其正常位置。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h2.pos_left</span><br><span class="line">&#123;</span><br><span class="line">    position:relative;</span><br><span class="line">    left:-20px;</span><br><span class="line">&#125;</span><br><span class="line">h2.pos_right</span><br><span class="line">&#123;</span><br><span class="line">    position:relative;</span><br><span class="line">    left:20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>移动相对定位元素，但它原本所占的空间不会改变。</p>
+<h2 id="absolute-定位"><a href="#absolute-定位" class="headerlink" title="absolute 定位"></a>absolute 定位</h2><p>绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h2</span><br><span class="line">&#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:100px;</span><br><span class="line">    top:150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="sticky-定位"><a href="#sticky-定位" class="headerlink" title="sticky 定位"></a>sticky 定位</h2><p>sticky 英文字面意思是粘，粘贴，所以可以把它称之为粘性定位。</p>
+<p>position: sticky; 基于用户的滚动位置来定位。</p>
+<p>粘性定位的元素是依赖于用户的滚动，在 position:relative 与 position:fixed 定位之间切换。</p>
+<p>它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。</p>
+<p>元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。</p>
+<p>这个特定阈值指的是 top, right, bottom 或 left 之一，换言之，指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。</p>
+<p>注意: Internet Explorer, Edge 15 及更早 IE 版本不支持 sticky 定位。 Safari 需要使用 -webkit- prefix (查看以下实例)。</p>
+<h1 id="CSS-布局-Overflow"><a href="#CSS-布局-Overflow" class="headerlink" title="CSS 布局 - Overflow"></a>CSS 布局 - Overflow</h1><p>CSS overflow 属性用于控制内容溢出元素框时显示的方式。<br>CSS overflow 属性可以控制内容溢出元素框时在对应的元素区间内添加滚动条。</p>
+<p>overflow属性有以下值：<br><img src="https://img-blog.csdnimg.cn/20200525075013154.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-Float-浮动"><a href="#CSS-Float-浮动" class="headerlink" title="CSS Float(浮动)"></a>CSS Float(浮动)</h1><p>CSS 的 Float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列。</p>
+<p>Float（浮动），往往是用于图像，但它在布局时一样非常有用。</p>
+<p>元素怎样浮动<br>元素的水平方向浮动，意味着元素只能左右移动而不能上下移动。</p>
+<p>一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。</p>
+<p>浮动元素之后的元素将围绕它。</p>
+<p>浮动元素之前的元素将不会受到影响。</p>
+<p>如果图像是右浮动，下面的文本流将环绕在它左边：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">img</span><br><span class="line">&#123;</span><br><span class="line">    float:right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>彼此相邻的浮动元素<br>如果你把几个浮动的元素放到一起，如果有空间的话，它们将彼此相邻。</p>
+<p>在这里，我们对图片廊使用 float 属性：</p>
+<p>清除浮动 - 使用 clear<br>元素浮动之后，周围的元素会重新排列，为了避免这种情况，使用 clear 属性。</p>
+<p>clear 属性指定元素两侧不能出现浮动元素。</p>
+<p>使用 clear 属性往文本中添加图片廊：</p>
+<p>实例<br><img src="https://img-blog.csdnimg.cn/2020052507521277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-布局-水平-amp-垂直对齐"><a href="#CSS-布局-水平-amp-垂直对齐" class="headerlink" title="CSS 布局 - 水平 &amp; 垂直对齐"></a>CSS 布局 - 水平 &amp; 垂直对齐</h1><h2 id="元素居中对齐"><a href="#元素居中对齐" class="headerlink" title="元素居中对齐"></a>元素居中对齐</h2><p>要水平居中对齐一个元素(如<br>), 可以使用 margin: auto;。</p>
+<p>设置到元素的宽度将防止它溢出到容器的边缘。</p>
+<p>元素通过指定宽度，并将两边的空外边距平均分配：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.center &#123;</span><br><span class="line">    margin: auto;</span><br><span class="line">    width: 50%;</span><br><span class="line">    border: 3px solid green;</span><br><span class="line">    padding: 10px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>如果没有设置 width 属性(或者设置 100%)，居中对齐将不起作用。</strong></p>
+<h2 id="文本居中对齐"><a href="#文本居中对齐" class="headerlink" title="文本居中对齐"></a>文本居中对齐</h2><p>如果仅仅是为了文本在元素内居中对齐，可以使用 text-align: center;</p>
+<h2 id="左右对齐-使用定位方式"><a href="#左右对齐-使用定位方式" class="headerlink" title="左右对齐 - 使用定位方式"></a>左右对齐 - 使用定位方式</h2><p>我们可以使用 position: absolute; 属性来对齐元素:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.right &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    right: 0px;</span><br><span class="line">    width: 300px;</span><br><span class="line">    border: 3px solid #73AD21;</span><br><span class="line">    padding: 10px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注释：绝对定位元素会被从正常流中删除，并且能够交叠元素。</p>
+<p>提示: 当使用 position 来对齐元素时, 通常 元素会设置 margin 和 padding 。 这样可以避免在不同的浏览器中出现可见的差异。</p>
+<p>当使用 position 属性时，IE8 以及更早的版本存在一个问题。如果容器元素（在我们的案例中是<br>）设置了指定的宽度，并且省略了 !DOCTYPE 声明，那么 IE8 以及更早的版本会在右侧增加 17px 的外边距。这似乎是为滚动条预留的空间。当使用 position 属性时，请始终设置 !DOCTYPE 声明：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    margin: 0;</span><br><span class="line">    padding: 0;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.container &#123;</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.right &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    right: 0px;</span><br><span class="line">    width: 300px;</span><br><span class="line">    background-color: #b0e0e6;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="CSS-组合选择符"><a href="#CSS-组合选择符" class="headerlink" title="CSS 组合选择符"></a>CSS 组合选择符</h1><p>组合选择符说明了两个选择器直接的关系。</p>
+<p>CSS组合选择符包括各种简单选择符的组合方式。</p>
+<p>在 CSS3 中包含了四种组合方式:</p>
+<p>后代选择器(以空格分隔)</p>
+<p>子元素选择器(以大于号分隔）</p>
+<p>相邻兄弟选择器（以加号分隔）</p>
+<p>普通兄弟选择器（以破折号分隔）</p>
+<h2 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h2><p>后代选择器用于选取某元素的后代元素。</p>
+<p>以下实例选取所有</p>
+<p>元素插入到<br>元素中:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">div p</span><br><span class="line">&#123;</span><br><span class="line">  background-color:yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="相邻兄弟选择器"><a href="#相邻兄弟选择器" class="headerlink" title="相邻兄弟选择器"></a>相邻兄弟选择器</h2><p>相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。</p>
+<p>如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器（Adjacent sibling selector）。</p>
+<p>以下实例选取了所有位于<br>元素后的第一个</p>
+<p>元素:</p>
+<p>相邻兄弟选择器<br>相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。</p>
+<p>如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器（Adjacent sibling selector）。</p>
+<p>以下实例选取了所有位于 <div> 元素后的第一个 <p> 元素:</p>
+<h2 id="后续兄弟选择器"><a href="#后续兄弟选择器" class="headerlink" title="后续兄弟选择器"></a>后续兄弟选择器</h2><p>后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。</p>
+<p>以下实例选取了所有<br>元素之后的所有相邻兄弟元素:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">div~p</span><br><span class="line">&#123;</span><br><span class="line">  background-color:yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="CSS-伪类-Pseudo-classes"><a href="#CSS-伪类-Pseudo-classes" class="headerlink" title="CSS 伪类(Pseudo-classes)"></a>CSS 伪类(Pseudo-classes)</h2><p>CSS伪类是用来添加一些选择器的特殊效果。</p>
+<p>伪类的语法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector:pseudo-class &#123;property:value;&#125;</span><br></pre></td></tr></table></figure>
+<p>CSS类也可以使用伪类：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector.class:pseudo-class &#123;property:value;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="anchor伪类"><a href="#anchor伪类" class="headerlink" title="anchor伪类"></a>anchor伪类</h2><p>在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a:link &#123;color:#FF0000;&#125; &#x2F;* 未访问的链接 *&#x2F;</span><br><span class="line">a:visited &#123;color:#00FF00;&#125; &#x2F;* 已访问的链接 *&#x2F;</span><br><span class="line">a:hover &#123;color:#FF00FF;&#125; &#x2F;* 鼠标划过链接 *&#x2F;</span><br><span class="line">a:active &#123;color:#0000FF;&#125; &#x2F;* 已选中的链接 *&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>**注意： 在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。</p>
+<p>注意： 在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。**</p>
+<h2 id="CSS-first-child-伪类"><a href="#CSS-first-child-伪类" class="headerlink" title="CSS :first-child 伪类"></a>CSS :first-child 伪类</h2><p>匹配第一个元素<br>在下面的例子中，选择器匹配作为任何元素的第一个子元素的</p>
+<p>元素：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p:first-child</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>匹配所有元素中的第一个元素<br>在下面的例子中，选择相匹配的所有元素的第一个元素：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p &gt; i:first-child</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>匹配所有作为第一个子元素的</p>
+<p>元素中的所有 元素<br>在下面的例子中，选择器匹配所有作为元素的第一个子元素的元素中的所有元素：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p:first-child i</span><br><span class="line">&#123;</span><br><span class="line">    color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="CSS-lang-伪类"><a href="#CSS-lang-伪类" class="headerlink" title="CSS - :lang 伪类"></a>CSS - :lang 伪类</h2><p>:lang 伪类使你有能力为不同的语言定义特殊的规则</p>
+<p>注意：IE8必须声明&lt;!DOCTYPE&gt;才能支持;lang伪类。</p>
+<p>在下面的例子中，:lang 类为属性值为 no 的q元素定义引号的类型：</p>
+<p>q:lang(no) {quotes: “<del>” “</del>”;}<br><img src="https://img-blog.csdnimg.cn/20200525084122477.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20200525084137168.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="CSS-伪元素"><a href="#CSS-伪元素" class="headerlink" title="CSS 伪元素"></a>CSS 伪元素</h1><p>伪元素的语法：</p>
+<p>selector:pseudo-element {property:value;}<br>CSS类也可以使用伪元素：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">selector.class:pseudo-element &#123;property:value;&#125;</span><br></pre></td></tr></table></figure>
+<p>##:first-line 伪元素</p>
+<p>“first-line” 伪元素用于向文本的首行设置特殊样式。</p>
+<p>在下面的例子中，浏览器会根据 “first-line” 伪元素中的样式对 p 元素的第一行文本进行格式化：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p:first-line </span><br><span class="line">&#123;</span><br><span class="line">    color:#ff0000;</span><br><span class="line">    font-variant:small-caps;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：“first-line” 伪元素只能用于块级元素。</p>
+<p>注意： 下面的属性可应用于 “first-line” 伪元素：<br>font properties</p>
+<p>color properties</p>
+<p>background properties</p>
+<p>word-spacing</p>
+<p>letter-spacing</p>
+<p>text-decoration</p>
+<p>vertical-align</p>
+<p>text-transform</p>
+<p>line-heig</p>
+<h2 id="first-letter-伪元素"><a href="#first-letter-伪元素" class="headerlink" title=":first-letter 伪元素"></a>:first-letter 伪元素</h2><p>“first-letter” 伪元素用于向文本的首字母设置特殊样式：</p>
+<p>注意： “first-letter” 伪元素只能用于块级元素。</p>
+<p>注意： 下面的属性可应用于 “first-letter” 伪元素：</p>
+<p>font properties</p>
+<p>color properties</p>
+<p>background properties</p>
+<p>margin properties</p>
+<p>padding properties</p>
+<p>border properties</p>
+<p>text-decoration</p>
+<p>vertical-align (only if “float” is “none”)</p>
+<p>text-transform</p>
+<p>line-height</p>
+<p>float</p>
+<p>clear</p>
+<h2 id="CSS-before-伪元素"><a href="#CSS-before-伪元素" class="headerlink" title="CSS - :before 伪元素"></a>CSS - :before 伪元素</h2><p>“:before” 伪元素可以在元素的内容前面插入新内容。</p>
+<p>下面的例子在每个</p>
+<h1 id="元素前面插入一幅图片："><a href="#元素前面插入一幅图片：" class="headerlink" title="元素前面插入一幅图片："></a>元素前面插入一幅图片：</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1:before </span><br><span class="line">&#123;</span><br><span class="line">    content:url(smiley.gif);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="CSS-after-伪元素"><a href="#CSS-after-伪元素" class="headerlink" title="CSS - :after 伪元素"></a>CSS - :after 伪元素</h2><p>“:after” 伪元素可以在元素的内容之后插入新内容。</p>
+<p>下面的例子在每个</p>
+<h1 id="元素后面插入一幅图片："><a href="#元素后面插入一幅图片：" class="headerlink" title="元素后面插入一幅图片："></a>元素后面插入一幅图片：</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h1:after</span><br><span class="line">&#123;</span><br><span class="line">    content:url(smiley.gif);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200525084427863.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0MjEwNQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+]]></content>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WEB前端工程师常去的15个技术网站</title>
     <url>/2020/07/06/WEB%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E5%8E%BB%E7%9A%8415%E4%B8%AA%E6%8A%80%E6%9C%AF%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="1、CSDN"><a href="#1、CSDN" class="headerlink" title="1、CSDN"></a>1、CSDN</h1><p>网址：<a href="https://www.csdn.net/" target="_blank" rel="noopener">https://www.csdn.net/</a></p>
@@ -167,26 +606,6 @@
 <p>Hexo Yilia 高级配置<br><a href="http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8" target="_blank" rel="noopener">http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/#1%E3%80%81%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E5%BC%82%E5%B8%B8</a></p>
 <p>Hexo博客添加helper-live2d动态模型插件<br><a href="https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">https://zhousiwei.gitee.io/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</a></p>
 <p>Hexo添加Live2D看板娘+模型预览<br><a href="http://element-ui.cn/news_show_22203.shtml" target="_blank" rel="noopener">http://element-ui.cn/news_show_22203.shtml</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/07/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<a id="more"></a>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
